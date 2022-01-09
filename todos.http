@@ -1,0 +1,27 @@
+GET http://localhost:3000/todos/?search_q=play
+
+###
+GET http://localhost:3000/todos/3/
+
+
+###
+POST  http://localhost:3000/todos/
+
+{
+  "id": 3,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+###
+
+PUT  http://localhost:3000/todos/2/
+
+{
+    "priority": "LOW"
+}
+
+
+
+###
+DELETE http://localhost:3000/todos/undefined/
